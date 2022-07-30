@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Pizza</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+    </head>
+
+    <body>
+        <div class="cover">
+            <div class="navigation">
+
+                <a class="button" href="#">
+                    <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                    <span class="button-name">Home</span>
+                </a>
+
+                <a class="button" href="#menu">
+                    <span class="icon"><ion-icon name="albums-outline"></ion-icon></span>
+                    <span class="button-name">Album</span>
+                </a>
+
+                <a class="button" href="#">
+                    <span class="icon"><ion-icon name="videocam-outline"></ion-icon></span>
+                    <span class="button-name">Video</span>
+                </a>
+
+                <a class="button" href="#">
+                    <span class="icon"><ion-icon name="calendar-number-outline"></ion-icon></span>
+                    <span class="button-name">Occations</span>
+                </a>
+
+                <a class="button" style="margin-left: auto;">
+                    <span class="icon"><ion-icon name="grid-outline"></ion-icon></span>
+                    <span class="button-name">Menu</span>
+                </a>
+            </div>
+
+            <div class="intro">
+                <div class="brand">
+                    <p>DAILY<br>MOMENTS<br>OF US</p>
+                    <br>
+                    <a href="">Nút này chưa có tác dụng :))</a>
+                </div>
+
+
+                <div class="open-time">
+                    <p>Được cập nhật hằng tuần</p>
+                </div>
+            </div>
+
+            <div class="menu" id="menu">
+                <div class="menuContent">
+                    <h1>Album</h1>
+                <div class="food-option">
+                    <div class="food-choice" href="javascript:void(0)" onclick="openMenu(event, 'pictures');" id="active">Pictures</div>
+                    <div class="food-choice" href="javascript:void(0)" onclick="openMenu(event, 'food');">Food</div>
+                    <div class="food-choice" href="javascript:void(0)" onclick="openMenu(event, 'gifts');">Gifts</div>
+                </div>  
+<!-- Pictures gallery -->
+                <div class="gallery" id="pictures">
+                    <div class="card">
+                        <div class="pic">
+                            <img src="pic1.jpg" alt="">
+                        </div>
+                        <div class="description">
+                            <h1>
+                                Hôm này là ngày chúng mình gặp nhau sau vài tuần
+                                Chúng mình quyết đinh dành dụm tiền để đi ăn nướng với nhau
+                            </h1>
+                            <p>Thực sự là 1 ngày rất vui vì mình rất nhớ cô ấy</p>
+                            <p>Chúng mình còn có quà cho nhau nữa</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="pic">
+                            <img src="pic2.1.jpg" alt="">
+                        </div>
+                        <div class="description">
+                            <h1>
+                                Đây là ngày sinh nhật thứ 2 mình đón cùng với cô ấy
+                                <br>
+                                Thực sự là 1 ngày rất đặc biệt vì lần này chúng mình được ở cùng nhau
+                            </h1>
+                            <p>Chúng mình còn quay rất nhiều clip tiktok nữa</p>
+                            <p>Hi vọng là những sinh nhật tới của cô ấy cô ấy cũng sẽ cười xinh đẹp như z</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="pic">
+                            <img src="pic3.1.jpg" alt="">
+                        </div>
+                        <div class="description">
+                            <h1>
+                                Chúng mình đang ăn chè nè
+                            </h1>
+                            <p>Hôm đấy mình mới về là đưa cô ấy đi ăn luôn</p>
+                            <p>Chúng mình kể nhau nghe những chuyện ở trường, hôm nay cô ấy đánh son xink vl</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="pic">
+                            <img src="pic4.1.jpg" alt="">
+                        </div>
+                        <div class="description">
+                            <h1>
+                                Đây là lần đầu tiên và cũng là duy nhất chúng mình đi xem phim cùng nhau
+                            </h1>
+                            <p>Hôm đấy chúng mình coi phim Việt nma hay lắm</p>
+                            <p>Nhìn cô ấy cười mình chỉ ước cô ấy luôn vui vẻ như z</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="pic">
+                            <img src="pic5.1.jpg" alt="">
+                        </div>
+                        <div class="description">
+                            <h1>
+                                Kỉ niệm mà mình nhớ nhất, ngày kỉ niệm 1 năm yêu nhau của chúng mình
+                            </h1>
+                            <p>Hôm ấy mình tặng cho cô ấy 1 cái vòng, nma nó hơi phế thì phải, ước j được chọn lại mình sẽ mua cái xịn hơn</p>
+                            <p>Cô ấy tặng mình 1 cái áo đẹp lắm, mình còn được ăn bánh kem nữa</p>
+                        </div>
+                    </div>
+                </div>
+<!-- Food gallery -->
+                <div class="gallery" id="food">
+                    <div class="card">
+                        <div class="pic">
+                            <img src="pic1.jpg" alt="">
+                        </div>
+                        <div class="description">
+                            <h1>Sau cùng thứ làm tổn thương chúng ta<br>không phải
+                            sự vô tâm mà là lẩu thái :D
+                            </h1>
+                            <p>Lẩu thái như bị dở hơi ý đồ gè</p>
+                            <p>456</p>
+                        </div>
+                    </div>
+                    
+                </div>
+<!-- Gifts gallery -->
+                <div class="gallery" id="gifts">
+                    <div class="card">
+                        <div class="pic">
+                            <img src="pic1.jpg" alt="">
+                        </div>
+                        <div class="description">
+                            <h1>Sau cùng thứ làm tổn thương chúng ta<br>không phải
+                            sự vô tâm mà là lẩu thái :D
+                            </h1>
+                            <p>Lẩu thái như bị dở hơi ý đồ gè</p>
+                            <p>789</p>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+<!-- cần 1 cái hiệu ứng cho cái nút đang được kích hoạt  -->
+        <script>
+            function openMenu(evt, menuName) {
+                var i, x, tablinks;
+                x = document.getElementsByClassName("gallery");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("food-choice");
+                for (i = 0; i < x.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace("red", "");
+                }
+                document.getElementById(menuName).style.display = "block";
+                evt.currentTarget.firstElementChild.className += "red";
+            }
+            document.getElementById("active").click();
+        </script>
+
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>
