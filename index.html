@@ -5,12 +5,13 @@
         <title>Món quà của anh</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="video.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
     </head>
 
     <body>
         <div class="cover">
-            <div class="navigation">
+            <div class="navigation" id="nav">
 
                 <a class="button" href="#">
                     <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
@@ -22,7 +23,7 @@
                     <span class="button-name">Album</span>
                 </a>
 
-                <a class="button" href="#">
+                <a class="button" href="#video">
                     <span class="icon"><ion-icon name="videocam-outline"></ion-icon></span>
                     <span class="button-name">Video</span>
                 </a>
@@ -42,7 +43,7 @@
                 <div class="brand">
                     <p>DAILY<br>MOMENTS<br>OF US</p>
                     <br>
-                    <a href="">Nút này chưa có tác dụng :))</a>
+                    <a class="btn" href="#video">Ở đây có 1 cái video hay nè</a>
                 </div>
 
 
@@ -277,9 +278,23 @@
                         </div>
                     </div>
                 </div>
-            </div>    
+                <div>
+                    <div class="video" id="video">
+                        <div class="btn-title" id="btn-title">Ấn zô để coi nha</div>
+                    </div>
+
+                    <div class="clip">
+                        <div class="hide"></div>
+                        <video src="video2.mp4" controls></video>
+                        <p class="close">Close</p>
+                    </div>
+                </div>
+
+            </div> 
+            <!-- đuôi của cái cover -->
 <!-- cần 1 cái hiệu ứng cho cái nút đang được kích hoạt  -->
         <script>
+            // open the menu
             function openMenu(evt, menuName) {
                 var i, x, tablinks;
                 x = document.getElementsByClassName("gallery");
@@ -294,6 +309,31 @@
                 evt.currentTarget.firstElementChild.className += "red";
             }
             document.getElementById("active").click();
+
+
+
+            // open the video
+            let btn = document.querySelector('.video');
+            let clip = document.querySelector('.clip');
+            let close = document.querySelector('.close');
+            let video = document.querySelector('video');
+            btn.onclick = function(){
+                document.getElementById('nav').style.display = "none"
+                document.getElementById('btn-title').style.visibility = "hidden";
+                btn.classList.add('active');
+                clip.classList.add('active');
+                video.play();
+                video.currentTime = 0;
+            }
+            close.onclick = function(){
+                btn.classList.remove('active');
+                clip.classList.remove('active');
+                document.getElementById('nav').style.display = "flex"
+                document.getElementById('btn-title').style.visibility = "unset";
+                video.pause();
+            }
+
+
         </script>
 
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
