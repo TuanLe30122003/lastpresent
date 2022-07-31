@@ -1,5 +1,5 @@
 .active .hide{
-    box-shadow: 0 0 0 1000vh #47817F;
+    box-shadow: 0 0 0 1000vh #BFFCF9;
 }
 
 .btn {
@@ -72,6 +72,7 @@
     right: 20px;
     cursor: pointer;
     transition: 0.5s;
+    color: #000;
 }
 
 .close:hover {
