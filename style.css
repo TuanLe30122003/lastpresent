@@ -173,6 +173,8 @@ a {
 .card {
     display: flex;
     flex-direction: row;
+    margin: 20px 0;
+    /* min-height: 400px; */
 }
 
 .pic {
